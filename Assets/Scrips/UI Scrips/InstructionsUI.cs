@@ -9,10 +9,8 @@ public class InstructionsUI : MonoBehaviour
 {
     [SerializeField]
     private Canvas mainCanvas;
-
     [SerializeField]
     private Canvas secondCanvas;
-
     [SerializeField]
     private Canvas thirdCanvas;
 
@@ -26,9 +24,16 @@ public class InstructionsUI : MonoBehaviour
     private TextMeshProUGUI m_BlueTowerText;
     [SerializeField]
     private TextMeshProUGUI m_DrillTowerText;
+    [SerializeField]
+    private Image m_goldImage;
 
     [SerializeField]
-    private Image m_goldImage;  
+    private TextMeshProUGUI m_GreenEnemyText;
+    [SerializeField]
+    private TextMeshProUGUI m_OrangeEnemyText;
+    [SerializeField]
+    private TextMeshProUGUI m_PurpleEnemyText;
+
 
 
     void Start()
@@ -38,6 +43,7 @@ public class InstructionsUI : MonoBehaviour
         thirdCanvas.enabled = false;
 
         DisableAllTowerText();
+        DisableAllEnemyText();
     }
     #region<GameObjective>
     public void OnPage1NextPressed()
@@ -61,6 +67,7 @@ public class InstructionsUI : MonoBehaviour
 
     public void OnPage3PreviousPressed()
     {
+        DisableAllEnemyText();
         thirdCanvas.enabled = false;
         secondCanvas.enabled = true;
     }
@@ -70,7 +77,6 @@ public class InstructionsUI : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
     #endregion<GameObjective>
-
 
     #region<Towers>
     void DisableAllTowerText()
@@ -109,4 +115,25 @@ public class InstructionsUI : MonoBehaviour
         m_goldImage.enabled = m_DrillTowerText.enabled;
     }
     #endregion<Towers>
+
+    #region<Enemies>
+    void DisableAllEnemyText()
+    {
+        m_GreenEnemyText.enabled = false;
+        m_OrangeEnemyText.enabled = false;
+        m_PurpleEnemyText.enabled = false;
+    }
+    public void OnGreenEnemyPressed()
+    {
+        m_GreenEnemyText.enabled = !m_GreenEnemyText.enabled;
+    }
+    public void OnOrangeEnemyPressed()
+    {
+        m_OrangeEnemyText.enabled = !m_OrangeEnemyText.enabled;
+    }
+    public void OnPurpleEnemyPressed()
+    {
+        m_PurpleEnemyText.enabled = !m_PurpleEnemyText.enabled;
+    }
+    #endregion<Enemies>
 }
