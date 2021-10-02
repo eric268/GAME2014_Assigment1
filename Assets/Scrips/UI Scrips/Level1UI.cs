@@ -11,12 +11,12 @@ public class Level1UI : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        pauseCanvas.enabled = false;
+        OnResumePlayPressed();
     }
 
     public void OnStartPressed()
     {
-        Debug.Log("Start button pressed");
+        SceneManager.LoadScene("GameOver");
     }
     public void PauseMenuPressed()
     {
