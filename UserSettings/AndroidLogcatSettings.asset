@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "emulator-5554",
         "name": "com.ericgalway.f2021.game2014.Assignment1",
-        "processId": 3374,
+        "processId": 2865,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,19 +11,55 @@
         {
             "deviceId": "emulator-5554",
             "name": "com.ericgalway.f2021.game2014.Assignment1",
-            "processId": 3021,
+            "processId": 3374,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.ericgalway.f2021.game2014.Assignment1",
+            "processId": 2809,
             "exited": true
         },
         {
             "deviceId": "emulator-5554",
             "name": "com.ldmnq.launcher3",
-            "processId": 1773,
+            "processId": 1846,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.ericgalway.f2021.game2014.Assignment1",
+            "processId": 3088,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.ericgalway.f2021.game2014.Assignment1",
+            "processId": 2765,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.ldmnq.launcher3",
+            "processId": 1782,
             "exited": false
         },
         {
             "deviceId": "emulator-5554",
             "name": "com.ericgalway.f2021.game2014.Assignment1",
-            "processId": 3374,
+            "processId": 2958,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.ericgalway.f2021.game2014.Assignment1",
+            "processId": 3023,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.ericgalway.f2021.game2014.Assignment1",
+            "processId": 2865,
             "exited": false
         }
     ],
